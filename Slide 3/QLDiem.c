@@ -23,6 +23,6 @@ int main(){
         printf("Yeu\n");
     }
 
-    printf("a = %f",diem);
+    printf("a = %f",diem); //log
     return 0;
 }
