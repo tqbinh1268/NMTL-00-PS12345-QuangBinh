@@ -13,8 +13,8 @@ int main(){
     
     printf("Nhap ban kinh: ");
     scanf("%f",&r);
-    chuViHT = r*2*PII;  //duong kinh * PI
-    dienTichHT = r*r*PI;
-    printf("Hinh chu nhat\nBan kinh: %.2f\nChu vi: %.2f\nDien tich: %.2f\n",r,chuViHT,dienTichHT);
+    chuViHT = r*2*PI;  //duong kinh * PI
+    dienTichHT = r*r*PII;
+    printf("Hinh tron\nBan kinh: %.2f\nChu vi: %.2f\nDien tich: %.2f\n",r,chuViHT,dienTichHT);
     return 0;
 }
