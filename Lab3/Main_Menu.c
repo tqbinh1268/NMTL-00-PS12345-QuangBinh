@@ -1,20 +1,24 @@
 #include <stdio.h>
-int main(){
+int main()
+{
     int chon;
-    printf("+-------------------------------+\n");
-    printf("|  MUNU CHƯƠNG TRÌNH LAB 3.     |\n");
-    printf("+-------------------------------+\n");
-    printf("| 0. Thoat chuong trinh.        |\n");
-    printf("| 1. Tinh hoc luc sinh vien     |\n");
-    printf("| 2. Giai phuong trinh bac 2    |\n");
-    printf("| 3. Tinh tien dien             |\n");
-    printf("+-------------------------------+\n");
-    printf("Ban hay chon chuc nang (0 - 3): ");
-    scanf("%d",&chon);
-    switch (chon)
+    do
     {
+        printf("+-------------------------------+\n");
+        printf("|  MUNU CHƯƠNG TRÌNH LAB 3.     |\n");
+        printf("+-------------------------------+\n");
+        printf("| 0. Thoat chuong trinh.        |\n");
+        printf("| 1. Tinh hoc luc sinh vien     |\n");
+        printf("| 2. Giai phuong trinh bac 2    |\n");
+        printf("| 3. Tinh tien dien             |\n");
+        printf("+-------------------------------+\n");
+        printf("Ban hay chon chuc nang (0 - 3): ");
+        scanf("%d", &chon); // chon :2
+        switch (chon)
+        {
         case 0:
             printf("Ban da chon chuc nang: 0. Thoat chuong trinh.\n");
+            // thêm các lệnh
             break;
         case 1:
             printf("Ban da chon chuc nang: 1. Tinh hoc luc sinh vien.\n");
@@ -28,7 +32,8 @@ int main(){
         default:
             printf("Ban phai chon chuc nang 0 - 3\n");
             break;
-    }
+        }
+    } while (chon != 0);
 
     return 0;
 }
